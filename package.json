@@ -1,0 +1,15 @@
+{
+  "name": "semanticDataExtractor",
+  "version": "0.0.1",
+  "description": "A tool that can recognize and infer data types and semantic meaning from strings",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "Data",
+    "Recognizer"
+  ],
+  "author": "Alex Kolarski <aleks.rk@gmail.com>",
+  "license": "ISC"
+}
