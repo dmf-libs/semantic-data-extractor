@@ -38,6 +38,7 @@ The initial main recognition goals are:
 - [x] EU VAT Number
 - [x] JSON
 - [x] MD5
+- [x] Blood Group
 - [ ] Image URL
 - [ ] US States
 - [ ] City
