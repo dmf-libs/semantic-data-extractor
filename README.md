@@ -1,11 +1,26 @@
 <p align="center">
-  <img width="440" height="345" src="https://raw.githubusercontent.com/kolarski/semanticDataExtractor/master/logo.png?raw=true" alt="Semantic Data Extractor logo">
+  <img width="440" src="https://raw.githubusercontent.com/kolarski/semanticDataExtractor/master/logo.png?raw=true" alt="Semantic Data Extractor logo">
 </p>
 
-> A tool that can recognize and infer data types and semantic meaning from strings
+<p align="center">A tool that can recognize and infer data types and semantic meaning from strings</p>
 
-![Release](https://img.shields.io/github/release/kolarski/semanticDataExtractor.svg) [![Build Status](https://travis-ci.org/kolarski/semanticDataExtractor.svg?branch=master)](https://travis-ci.org/kolarski/semanticDataExtractor) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/246f318de5194047afde4532bd8d186c)](https://www.codacy.com/app/kolarski/semanticDataExtractor?utm_source=github.com&utm_medium=referral&utm_content=kolarski/semanticDataExtractor&utm_campaign=Badge_Grade) <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/maintainability"><img src="https://api.codeclimate.com/v1/badges/3afb0d6655605a004c11/maintainability" /></a> <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/test_coverage"><img src="https://api.codeclimate.com/v1/badges/3afb0d6655605a004c11/test_coverage" /></a> ![Dependencies](https://img.shields.io/david/kolarski/semanticDataExtractor.svg)
+<p align="center">
+  <img src="https://img.shields.io/github/release/kolarski/semanticDataExtractor.svg" />
+  
+  <a href="https://travis-ci.org/kolarski/semanticDataExtractor">
+    <img src="https://travis-ci.org/kolarski/semanticDataExtractor.svg?branch=master" />
+  </a>
+  <a href="https://www.codacy.com/app/kolarski/semanticDataExtractor?utm_source=github.com&utm_medium=referral&utm_content=kolarski/semanticDataExtractor&utm_campaign=Badge_Grade">
+    <img src="https://api.codacy.com/project/badge/Grade/246f318de5194047afde4532bd8d186c" />
+  </a>
 
+  <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/maintainability">
+    <img src="https://api.codeclimate.com/v1/badges/3afb0d6655605a004c11/maintainability" />
+  </a>
+  <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/test_coverage"><img src="https://api.codeclimate.com/v1/badges/3afb0d6655605a004c11/test_coverage" /></a>
+  
+  <img src="https://img.shields.io/david/kolarski/semanticDataExtractor.svg" />
+</p>
 ## Contribution
 
 Feel free to add suggestions, PRs, comments and bug reports.
