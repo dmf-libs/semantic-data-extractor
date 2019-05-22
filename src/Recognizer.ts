@@ -23,6 +23,7 @@ import HTMLColorRecognizer from "./recognizers/HTMLColor";
 import ProgrammingCommentRecognizer from "./recognizers/ProgrammingComment";
 import VatRecognizer from "./recognizers/VAT";
 import JSONRecognizer from "./recognizers/JSON";
+import MD5Recognizer from "./recognizers/MD5Recognizer";
 
 export default class Recognizer {
   recognizers: Array<IRecognizer> = [
@@ -47,7 +48,8 @@ export default class Recognizer {
     new HTMLColorRecognizer(),
     new ProgrammingCommentRecognizer(),
     new VatRecognizer(),
-    new JSONRecognizer()
+    new JSONRecognizer(),
+    new MD5Recognizer()
   ];
 
   recognize(text: string, recognizersList: Array<string> = []): Array<IRecognizedType> {

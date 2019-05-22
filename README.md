@@ -37,6 +37,7 @@ The initial main recognition goals are:
 - [x] Programming comment
 - [x] EU VAT Number
 - [x] JSON
+- [x] MD5
 - [ ] Image URL
 - [ ] US States
 - [ ] City
@@ -48,6 +49,10 @@ The initial main recognition goals are:
 - [ ] TCP Port - http://www.regexlib.com/REDetails.aspx?regexp_id=1236
 - [ ] UK Postal codes - http://www.regexlib.com/REDetails.aspx?regexp_id=1047
 - [ ] Apache common log format - http://www.regexlib.com/REDetails.aspx?regexp_id=1085
+
+## Notes
+
+    Add Performance test into `General.test.ts` (test with long string like md5 string)
 
 ## Authors
 
