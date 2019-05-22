@@ -14,24 +14,24 @@ Feel free to add suggestions, PRs, comments and bug reports.
 
 The initial main recognition goals are:
 
-- Boolean [Done]
-- URL [Done]
-- DateTime [Done]
-- Integer number [Done]
-- Float number [Done]
-- Image URL
-- Geo Location
-- File
-- Document
-- Presentation
-- Spreadsheet
-- City
-- Country
-- Person Name
-- Person Title
-- Currency
-- BG phone number
-- BG Address
+- [x] Boolean
+- [x] URL
+- [x] DateTime
+- [x] Integer number
+- [x] Float number
+- [ ] Image URL
+- [ ] Geo Location
+- [ ] File
+- [ ] Document
+- [ ] Presentation
+- [ ] Spreadsheet
+- [ ] City
+- [ ] Country
+- [ ] Person Name
+- [ ] Person Title
+- [ ] Currency
+- [ ] BG phone number
+- [ ] BG Address
 
 ## Authors
 

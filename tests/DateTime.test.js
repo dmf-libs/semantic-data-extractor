@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize date", () => {
   expect(recognizer.recognize("2019-10-04")).toStrictEqual([
     {
-      sanatizedValue: "Fri Oct 04 2019 03:00:00 GMT+0300",
+      sanatizedValue: 1570147200,
       type: "datetime",
       value: "2019-10-04"
     }
@@ -12,8 +12,6 @@ test("Recognize date", () => {
 });
 
 test("Do not recognize integers as dates", () => {
-  const result = recognizer
-    .recognize("12312312")
-    .filter(r => r.type === "datetime");
-  expect(result).toHaveLength(0);
+  const result = recognizer.recognize("12312312");
+  expect(result.filter(r => r.type === "datetime")).toHaveLength(0);
 });
