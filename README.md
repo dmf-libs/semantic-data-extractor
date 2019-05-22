@@ -4,7 +4,7 @@
 
 > A tool that can recognize and infer data types and semantic meaning from strings
 
-![Release](https://img.shields.io/github/release/kolarski/semanticDataExtractor.svg) [![Build Status](https://travis-ci.org/kolarski/semanticDataExtractor.svg?branch=master)](https://travis-ci.org/kolarski/semanticDataExtractor) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/246f318de5194047afde4532bd8d186c)](https://www.codacy.com/app/kolarski/semanticDataExtractor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kolarski/semanticDataExtractor&amp;utm_campaign=Badge_Grade) <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/maintainability"><img src="https://api.codeclimate.com/v1/badges/3afb0d6655605a004c11/maintainability" /></a> <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/test_coverage"><img src="https://api.codeclimate.com/v1/badges/3afb0d6655605a004c11/test_coverage" /></a> ![Dependencies](https://img.shields.io/david/kolarski/semanticDataExtractor.svg) 
+![Release](https://img.shields.io/github/release/kolarski/semanticDataExtractor.svg) [![Build Status](https://travis-ci.org/kolarski/semanticDataExtractor.svg?branch=master)](https://travis-ci.org/kolarski/semanticDataExtractor) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/246f318de5194047afde4532bd8d186c)](https://www.codacy.com/app/kolarski/semanticDataExtractor?utm_source=github.com&utm_medium=referral&utm_content=kolarski/semanticDataExtractor&utm_campaign=Badge_Grade) <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/maintainability"><img src="https://api.codeclimate.com/v1/badges/3afb0d6655605a004c11/maintainability" /></a> <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/test_coverage"><img src="https://api.codeclimate.com/v1/badges/3afb0d6655605a004c11/test_coverage" /></a> ![Dependencies](https://img.shields.io/david/kolarski/semanticDataExtractor.svg)
 
 ## Contribution
 
@@ -19,14 +19,18 @@ The initial main recognition goals are:
 - [x] DateTime
 - [x] Integer number
 - [x] Float number
+- [x] Mac Address
+- [x] Binary string
+- [x] File Path
+- [x] IPv4
+- [x] IPv4 Socket
+- [x] IPv6
+- [x] Email
+- [x] Top Level Domain (TLD)
+- [x] Country
+- [x] Geo Location
 - [ ] Image URL
-- [ ] Geo Location
-- [ ] File
-- [ ] Document
-- [ ] Presentation
-- [ ] Spreadsheet
 - [ ] City
-- [ ] Country
 - [ ] Person Name
 - [ ] Person Title
 - [ ] Currency

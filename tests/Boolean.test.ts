@@ -41,7 +41,7 @@ test("Correctly recognizes the case insensitive string - true", () => {
 });
 
 test("Correctly recognizes the Yes as true", () => {
-  expect(recognizer.recognize("Yes")).toStrictEqual([
+  expect(recognizer.recognize("Yes", ["boolean"])).toStrictEqual([
     {
       type: "boolean",
       value: "Yes",
@@ -51,7 +51,7 @@ test("Correctly recognizes the Yes as true", () => {
 });
 
 test("Correctly recognizes the No as false", () => {
-  expect(recognizer.recognize("No")).toStrictEqual([
+  expect(recognizer.recognize("No", ["boolean"])).toStrictEqual([
     {
       type: "boolean",
       value: "No",
@@ -61,31 +61,21 @@ test("Correctly recognizes the No as false", () => {
 });
 
 test("Correctly recognizes the 1 as true and integer", () => {
-  expect(recognizer.recognize("1")).toStrictEqual([
+  expect(recognizer.recognize("1", ["boolean"])).toStrictEqual([
     {
       type: "boolean",
       value: "1",
       sanatizedValue: true
-    },
-    {
-      sanatizedValue: 1,
-      type: "integer",
-      value: "1"
     }
   ]);
 });
 
 test("Correctly recognizes the 0 as false and integer", () => {
-  expect(recognizer.recognize("0")).toStrictEqual([
+  expect(recognizer.recognize("0", ["boolean"])).toStrictEqual([
     {
       type: "boolean",
       value: "0",
       sanatizedValue: false
-    },
-    {
-      sanatizedValue: 0,
-      type: "integer",
-      value: "0"
     }
   ]);
 });

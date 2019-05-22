@@ -12,7 +12,7 @@ test("Recognize simple float", () => {
 });
 
 test("Recognize float with ,", () => {
-  expect(recognizer.recognize("32,5931")).toStrictEqual([
+  expect(recognizer.recognize("32,5931", ["float" /*skip geo-location*/])).toStrictEqual([
     {
       sanatizedValue: 32.5931,
       type: "float",
