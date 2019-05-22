@@ -1,10 +1,10 @@
 import IRecognizer from "../interfaces/IRecognizer";
 import IRecognizedType from "../interfaces/IRecognizedType";
 /**
- * @author See File header (./../helpers/VAT)
+ * @author See File header (./../external/VAT)
  * @see https://www.braemoor.co.uk/software/vat.shtml
  */
-import checkVATNumber from "./../helpers/VAT";
+import checkVATNumber from "./../external/VAT";
 
 export default class VAT implements IRecognizer {
   name: string = "vat";
