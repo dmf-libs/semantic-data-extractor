@@ -21,6 +21,7 @@
   
   <img src="https://img.shields.io/david/kolarski/semanticDataExtractor.svg" />
 </p>
+
 ## Contribution
 
 Feel free to add suggestions, PRs, comments and bug reports.
