@@ -4,11 +4,34 @@
 
 > A tool that can recognize and infer data types and semantic meaning from strings
 
-![Release](https://img.shields.io/github/release/kolarski/semanticDataExtractor.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/kolarski/semanticDataExtractor.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7f37798aff8949f0a3895127a5f82c17)](https://app.codacy.com/app/kolarski/semanticDataExtractor?utm_source=github.com&utm_medium=referral&utm_content=kolarski/semanticDataExtractor&utm_campaign=Badge_Grade_Dashboard) <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/maintainability"><img src="https://api.codeclimate.com/v1/badges/cf96fe18b9779907d50a/maintainability" /></a> <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/test_coverage"><img src="https://api.codeclimate.com/v1/badges/cf96fe18b9779907d50a/test_coverage" /></a> ![Dependencies](https://img.shields.io/david/kolarski/semanticDataExtractor.svg) [![Build Status](https://travis-ci.org/kolarski/semanticDataExtractor.svg?branch=master)](https://travis-ci.org/kolarski/semanticDataExtractor)
+![Release](https://img.shields.io/github/release/kolarski/semanticDataExtractor.svg) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/kolarski/semanticDataExtractor.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7f37798aff8949f0a3895127a5f82c17)](https://app.codacy.com/app/kolarski/semanticDataExtractor?utm_source=github.com&utm_medium=referral&utm_content=kolarski/semanticDataExtractor&utm_campaign=Badge_Grade_Dashboard) <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/maintainability"><img src="https://api.codeclimate.com/v1/badges/3afb0d6655605a004c11/maintainability" /></a> <a href="https://codeclimate.com/github/kolarski/semanticDataExtractor/test_coverage"><img src="https://api.codeclimate.com/v1/badges/3afb0d6655605a004c11/test_coverage" /></a> ![Dependencies](https://img.shields.io/david/kolarski/semanticDataExtractor.svg) [![Build Status](https://travis-ci.org/kolarski/semanticDataExtractor.svg?branch=master)](https://travis-ci.org/kolarski/semanticDataExtractor)
 
 ## Contribution
 
 Feel free to add suggestions, PRs, comments and bug reports.
+
+## Goals
+
+The initial main recognition goals are:
+
+- Boolean [Done]
+- URL [Done]
+- DateTime [Done]
+- Integer number [Done]
+- Float number [Done]
+- Image URL
+- Geo Location
+- File
+- Document
+- Presentation
+- Spreadsheet
+- City
+- Country
+- Person Name
+- Person Title
+- Currency
+- BG phone number
+- BG Address
 
 ## Authors
 

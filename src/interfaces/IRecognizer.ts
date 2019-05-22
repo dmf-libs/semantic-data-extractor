@@ -1,6 +1,6 @@
-import TypeEnum from '../TypeEnum';
+import IRecognizedType from "./IRecognizedType";
 
 export default interface IRecognizer {
-    type: TypeEnum
-    recognize(text: string): boolean
+  name: string;
+  recognize(text: string): IRecognizedType | null;
 }

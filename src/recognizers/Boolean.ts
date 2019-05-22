@@ -1,9 +1,30 @@
 import IRecognizer from "../interfaces/IRecognizer";
-import TypeEnum from './../TypeEnum';
+import IRecognizedType from "../interfaces/IRecognizedType";
 
 export default class Boolean implements IRecognizer {
-    type: TypeEnum = TypeEnum.Boolean
-    recognize(text: string): boolean {
-        return ['true', 'false'].indexOf(text) !== -1;
+  name: string = "boolean";
+  recognize(text: string): IRecognizedType | null {
+    if (["yes", "no"].indexOf(text.toLowerCase()) !== -1) {
+      return {
+        type: this.name,
+        value: text,
+        sanatizedValue: text.toLowerCase() === "yes"
+      };
     }
-} 
+    if (["true", "false"].indexOf(text.toLowerCase()) !== -1) {
+      return {
+        type: this.name,
+        value: text,
+        sanatizedValue: text.toLowerCase() === "true"
+      };
+    }
+    if (["1", "0"].indexOf(text) !== -1) {
+      return {
+        type: this.name,
+        value: text,
+        sanatizedValue: text === "1"
+      };
+    }
+    return null;
+  }
+}

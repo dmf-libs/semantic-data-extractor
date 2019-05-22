@@ -1,25 +1,32 @@
 import IRecognizer from "./interfaces/IRecognizer";
 
-import BooleanRecognizer from './recognizers/Boolean';
-import DateRecognizer from './recognizers/Date';
-import URLRecognizer from './recognizers/URL';
-import ImageRecognizer from './recognizers/Image'
+import BooleanRecognizer from "./recognizers/Boolean";
+import DateTimeRecognizer from "./recognizers/DateTime";
+import URLRecognizer from "./recognizers/URLRecognizer";
+// import ImageRecognizer from './recognizers/Image'
 
-import TypeEnum from "./TypeEnum";
+import IRecognizedType from "./interfaces/IRecognizedType";
+import IntegerRecognizer from "./recognizers/Integer";
+import FloatRecognizer from "./recognizers/Float";
 
 export default class Recognizer {
-    recognizers: Array<IRecognizer> =  [
-        new BooleanRecognizer(),
-        new DateRecognizer(),
-        new URLRecognizer(),
-        new ImageRecognizer()
-    ];
-    recognize(text: string): TypeEnum {
-        for(let recognizer of this.recognizers) {
-            if(recognizer.recognize(text)) {
-                return recognizer.type;
-            }
-        }
-        return TypeEnum.Undefined;
+  recognizers: Array<IRecognizer> = [
+    new BooleanRecognizer(),
+    new DateTimeRecognizer(),
+    new URLRecognizer(),
+    new IntegerRecognizer(),
+    new FloatRecognizer()
+    // new ImageRecognizer()
+  ];
+  recognize(text: string): Array<IRecognizedType> {
+    text = text.trim();
+    const recognizedAs = [];
+    for (let recognizer of this.recognizers) {
+      const output = recognizer.recognize(text);
+      if (output) {
+        recognizedAs.push(output);
+      }
     }
+    return recognizedAs;
+  }
 }
