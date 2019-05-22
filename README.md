@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="706" height="288" src="https://raw.githubusercontent.com/kolarski/semanticDataExtractor/master/src/logo.png?raw=true" alt="Semantic Data Extractor logo">
+  <img width="440" height="345" src="https://raw.githubusercontent.com/kolarski/semanticDataExtractor/master/logo.png?raw=true" alt="Semantic Data Extractor logo">
 </p>
 
 > A tool that can recognize and infer data types and semantic meaning from strings
