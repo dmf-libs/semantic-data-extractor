@@ -5,6 +5,8 @@ import IRecognizedType from "../interfaces/IRecognizedType";
  * @author Michael Ash
  * @see http://www.regexlib.com/REDetails.aspx?regexp_id=463
  */
+
+//TODO: http://www.regexlib.com/REDetails.aspx?regexp_id=12945
 export default class ISBN implements IRecognizer {
   name: string = "isbn";
   recognize(text: string): IRecognizedType | null {

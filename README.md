@@ -42,6 +42,7 @@ The initial main recognition goals are:
 - [x] CIDR
 - [x] YouTube video URL
 - [x] Musical Chords
+- [ ] JWT Token
 - [ ] Image URL
 - [ ] US States
 - [ ] City

@@ -6,13 +6,20 @@
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watch",
-    "coverage": "jest --coverage",
+    "coverage": "jest --coverage --coveragePathIgnorePatterns=[\"/\"]",
     "tsc": "tsc -w"
   },
   "keywords": [
     "Data",
     "Recognizer"
   ],
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/src/datasets/.*\\.(ts|js|json|txt|csv)$",
+      "/src/external/.*\\.(ts|js)$"
+    ]
+  },
   "author": "Alex Kolarski <aleks.rk@gmail.com>",
   "license": "ISC",
   "devDependencies": {
