@@ -1,7 +1,7 @@
 import Recognizer from "./../src/Recognizer";
 const recognizer = new Recognizer();
 
-test("Recognize correct binary string", () => {
+test("Recognize correct geo location string", () => {
   expect(recognizer.recognize("+90.0, -127.554334")).toStrictEqual([
     {
       sanatizedValue: {
@@ -70,7 +70,7 @@ test("Recognize correct binary string", () => {
   ]);
 });
 
-test("Do not recognize wrong binary string", () => {
+test("Do not recognize wrong geo location string", () => {
   expect(recognizer.recognize("-90., -180.")).toStrictEqual([]);
   expect(recognizer.recognize("+90.1, -100.111")).toStrictEqual([]);
   expect(recognizer.recognize("-91, 123.456")).toStrictEqual([]);

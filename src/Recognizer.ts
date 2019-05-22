@@ -17,6 +17,7 @@ import EmailRecognizer from "./recognizers/Email";
 import TLDRecognizer from "./recognizers/TLD";
 import CountryRecognizer from "./recognizers/Country";
 import GeoLocationRecognizer from "./recognizers/GeoLocation";
+import PercentageRecognizer from "./recognizers/Percentage";
 
 export default class Recognizer {
   recognizers: Array<IRecognizer> = [
@@ -33,7 +34,8 @@ export default class Recognizer {
     new EmailRecognizer(),
     new TLDRecognizer(),
     new CountryRecognizer(),
-    new GeoLocationRecognizer()
+    new GeoLocationRecognizer(),
+    new PercentageRecognizer()
     // new ImageRecognizer()
   ];
   recognize(text: string, recognizers: Array<string> = []): Array<IRecognizedType> {

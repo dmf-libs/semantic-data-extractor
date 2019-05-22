@@ -2,7 +2,7 @@ import Recognizer from "./../src/Recognizer";
 const recognizer = new Recognizer();
 
 test("Recognize simple float", () => {
-  expect(recognizer.recognize("32.5931")).toStrictEqual([
+  expect(recognizer.recognize("32.5931", ["float" /* percentage */])).toStrictEqual([
     {
       sanatizedValue: 32.5931,
       type: "float",

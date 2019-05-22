@@ -29,6 +29,7 @@ The initial main recognition goals are:
 - [x] Top Level Domain (TLD)
 - [x] Country
 - [x] Geo Location
+- [x] Percentage
 - [ ] Image URL
 - [ ] City
 - [ ] Person Name
