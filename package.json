@@ -4,12 +4,16 @@
   "description": "A tool that can recognize and infer data types and semantic meaning from strings",
   "main": "app.js",
   "scripts": {
-    "test": "npm test"
+    "test": "./node_modules/.bin/mocha ./test",
+    "test-watch": "./node_modules/.bin/mocha -w ./test"
   },
   "keywords": [
     "Data",
     "Recognizer"
   ],
   "author": "Alex Kolarski <aleks.rk@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "4.0.1"
+  }
 }
