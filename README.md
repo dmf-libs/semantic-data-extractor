@@ -17,6 +17,7 @@ The initial main recognition goals are:
 - [x] Boolean
 - [x] URL
 - [x] DateTime
+- [x] Time
 - [x] Integer number
 - [x] Float number
 - [x] Mac Address
@@ -31,6 +32,7 @@ The initial main recognition goals are:
 - [x] Geo Location
 - [x] Percentage
 - [x] ISBN
+- [x] Credit Card
 - [ ] Image URL
 - [ ] City
 - [ ] Person Name

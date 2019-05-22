@@ -3,8 +3,6 @@ import IRecognizer from "./interfaces/IRecognizer";
 import BooleanRecognizer from "./recognizers/Boolean";
 import DateTimeRecognizer from "./recognizers/DateTime";
 import URLRecognizer from "./recognizers/URLRecognizer";
-// import ImageRecognizer from './recognizers/Image'
-
 import IRecognizedType from "./interfaces/IRecognizedType";
 import IntegerRecognizer from "./recognizers/Integer";
 import FloatRecognizer from "./recognizers/Float";
@@ -19,6 +17,8 @@ import CountryRecognizer from "./recognizers/Country";
 import GeoLocationRecognizer from "./recognizers/GeoLocation";
 import PercentageRecognizer from "./recognizers/Percentage";
 import ISBNRecognizer from "./recognizers/ISBN";
+import CreditCardRecognizer from "./recognizers/CreditCard";
+import TimeRecognizer from "./recognizers/Time";
 
 export default class Recognizer {
   recognizers: Array<IRecognizer> = [
@@ -37,8 +37,9 @@ export default class Recognizer {
     new CountryRecognizer(),
     new GeoLocationRecognizer(),
     new PercentageRecognizer(),
-    new ISBNRecognizer()
-    // new ImageRecognizer()
+    new ISBNRecognizer(),
+    new CreditCardRecognizer(),
+    new TimeRecognizer()
   ];
   recognize(text: string, recognizers: Array<string> = []): Array<IRecognizedType> {
     text = text.trim();
