@@ -33,13 +33,16 @@ The initial main recognition goals are:
 - [x] Percentage
 - [x] ISBN
 - [x] Credit Card
+- [x] HTML Colors
 - [ ] Image URL
+- [ ] US States
 - [ ] City
 - [ ] Person Name
 - [ ] Person Title
 - [ ] Currency
 - [ ] BG phone number
 - [ ] BG Address
+- [ ] UK Postal codes - http://www.regexlib.com/REDetails.aspx?regexp_id=1047
 
 ## Authors
 

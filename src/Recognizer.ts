@@ -19,6 +19,7 @@ import PercentageRecognizer from "./recognizers/Percentage";
 import ISBNRecognizer from "./recognizers/ISBN";
 import CreditCardRecognizer from "./recognizers/CreditCard";
 import TimeRecognizer from "./recognizers/Time";
+import HTMLColorRecognizer from "./recognizers/HTMLColor";
 
 export default class Recognizer {
   recognizers: Array<IRecognizer> = [
@@ -39,7 +40,8 @@ export default class Recognizer {
     new PercentageRecognizer(),
     new ISBNRecognizer(),
     new CreditCardRecognizer(),
-    new TimeRecognizer()
+    new TimeRecognizer(),
+    new HTMLColorRecognizer()
   ];
   recognize(text: string, recognizers: Array<string> = []): Array<IRecognizedType> {
     text = text.trim();
