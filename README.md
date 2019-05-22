@@ -39,6 +39,7 @@ The initial main recognition goals are:
 - [x] JSON
 - [x] MD5
 - [x] Blood Group
+- [x] CIDR
 - [ ] Image URL
 - [ ] US States
 - [ ] City

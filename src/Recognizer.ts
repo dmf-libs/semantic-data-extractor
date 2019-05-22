@@ -25,6 +25,7 @@ import VatRecognizer from "./recognizers/VAT";
 import JSONRecognizer from "./recognizers/JSON";
 import MD5Recognizer from "./recognizers/MD5Recognizer";
 import BloodGroupRecognizer from "./recognizers/BloodGroup";
+import CIDRRecognizer from "./recognizers/CIDR";
 
 export default class Recognizer {
   recognizers: Array<IRecognizer> = [
@@ -51,7 +52,8 @@ export default class Recognizer {
     new VatRecognizer(),
     new JSONRecognizer(),
     new MD5Recognizer(),
-    new BloodGroupRecognizer()
+    new BloodGroupRecognizer(),
+    new CIDRRecognizer()
   ];
 
   recognize(text: string, recognizersList: Array<string> = []): Array<IRecognizedType> {
