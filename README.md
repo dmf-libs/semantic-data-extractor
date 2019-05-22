@@ -36,6 +36,7 @@ The initial main recognition goals are:
 - [x] HTML Colors
 - [x] Programming comment
 - [x] EU VAT Number
+- [x] JSON
 - [ ] Image URL
 - [ ] US States
 - [ ] City

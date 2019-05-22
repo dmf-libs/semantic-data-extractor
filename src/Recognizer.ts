@@ -22,6 +22,7 @@ import TimeRecognizer from "./recognizers/Time";
 import HTMLColorRecognizer from "./recognizers/HTMLColor";
 import ProgrammingCommentRecognizer from "./recognizers/ProgrammingComment";
 import VatRecognizer from "./recognizers/VAT";
+import JSONRecognizer from "./recognizers/JSON";
 
 export default class Recognizer {
   recognizers: Array<IRecognizer> = [
@@ -45,7 +46,8 @@ export default class Recognizer {
     new TimeRecognizer(),
     new HTMLColorRecognizer(),
     new ProgrammingCommentRecognizer(),
-    new VatRecognizer()
+    new VatRecognizer(),
+    new JSONRecognizer()
   ];
 
   recognize(text: string, recognizersList: Array<string> = []): Array<IRecognizedType> {
