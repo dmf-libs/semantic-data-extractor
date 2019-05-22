@@ -30,6 +30,7 @@ The initial main recognition goals are:
 - [x] Country
 - [x] Geo Location
 - [x] Percentage
+- [x] ISBN
 - [ ] Image URL
 - [ ] City
 - [ ] Person Name

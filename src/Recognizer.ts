@@ -18,6 +18,7 @@ import TLDRecognizer from "./recognizers/TLD";
 import CountryRecognizer from "./recognizers/Country";
 import GeoLocationRecognizer from "./recognizers/GeoLocation";
 import PercentageRecognizer from "./recognizers/Percentage";
+import ISBNRecognizer from "./recognizers/ISBN";
 
 export default class Recognizer {
   recognizers: Array<IRecognizer> = [
@@ -35,7 +36,8 @@ export default class Recognizer {
     new TLDRecognizer(),
     new CountryRecognizer(),
     new GeoLocationRecognizer(),
-    new PercentageRecognizer()
+    new PercentageRecognizer(),
+    new ISBNRecognizer()
     // new ImageRecognizer()
   ];
   recognize(text: string, recognizers: Array<string> = []): Array<IRecognizedType> {
