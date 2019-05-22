@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watch",
-    "coverage": "jest --coverage --coveragePathIgnorePatterns=[\"/\"]",
+    "coverage": "jest --coverage",
     "tsc": "tsc -w"
   },
   "keywords": [
