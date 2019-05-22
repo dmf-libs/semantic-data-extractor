@@ -35,6 +35,7 @@ The initial main recognition goals are:
 - [x] Credit Card
 - [x] HTML Colors
 - [x] Programming comment
+- [x] EU VAT Number
 - [ ] Image URL
 - [ ] US States
 - [ ] City
@@ -43,7 +44,9 @@ The initial main recognition goals are:
 - [ ] Currency
 - [ ] BG phone number
 - [ ] BG Address
+- [ ] TCP Port - http://www.regexlib.com/REDetails.aspx?regexp_id=1236
 - [ ] UK Postal codes - http://www.regexlib.com/REDetails.aspx?regexp_id=1047
+- [ ] Apache common log format - http://www.regexlib.com/REDetails.aspx?regexp_id=1085
 
 ## Authors
 

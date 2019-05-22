@@ -5,6 +5,8 @@ import IRecognizedType from "../interfaces/IRecognizedType";
  * @author Iain Fraser
  * @see https://stackoverflow.com/a/18690202/567897
  */
+
+//TODO: extend with http://www.regexlib.com/REDetails.aspx?regexp_id=1102
 export default class GeoLocation implements IRecognizer {
   name: string = "geo-location";
   recognize(text: string): IRecognizedType | null {

@@ -21,6 +21,7 @@ import CreditCardRecognizer from "./recognizers/CreditCard";
 import TimeRecognizer from "./recognizers/Time";
 import HTMLColorRecognizer from "./recognizers/HTMLColor";
 import ProgrammingCommentRecognizer from "./recognizers/ProgrammingComment";
+import VatRecognizer from "./recognizers/VAT";
 
 export default class Recognizer {
   recognizers: Array<IRecognizer> = [
@@ -43,7 +44,8 @@ export default class Recognizer {
     new CreditCardRecognizer(),
     new TimeRecognizer(),
     new HTMLColorRecognizer(),
-    new ProgrammingCommentRecognizer()
+    new ProgrammingCommentRecognizer(),
+    new VatRecognizer()
   ];
   recognize(text: string, recognizers: Array<string> = []): Array<IRecognizedType> {
     text = text.trim();
