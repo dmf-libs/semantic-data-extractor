@@ -1,4 +1,4 @@
-import Recognizer from "./../src/Recognizer";
+import Recognizer from "../src/Recognizer";
 const recognizer = new Recognizer();
 
 test("Recognize correct geo location string", () => {
