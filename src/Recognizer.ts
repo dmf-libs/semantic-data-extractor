@@ -27,6 +27,7 @@ import MD5Recognizer from "./recognizers/MD5Recognizer";
 import BloodGroupRecognizer from "./recognizers/BloodGroup";
 import CIDRRecognizer from "./recognizers/CIDR";
 import YoutubeURLRecognizer from "./recognizers/YoutubeURL";
+import MusicalChordRecognizer from "./recognizers/MusicalChord";
 
 export default class Recognizer {
   recognizers: Array<IRecognizer> = [
@@ -55,7 +56,8 @@ export default class Recognizer {
     new MD5Recognizer(),
     new BloodGroupRecognizer(),
     new CIDRRecognizer(),
-    new YoutubeURLRecognizer()
+    new YoutubeURLRecognizer(),
+    new MusicalChordRecognizer()
   ];
 
   recognize(text: string, recognizersList: Array<string> = []): Array<IRecognizedType> {

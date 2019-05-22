@@ -41,6 +41,7 @@ The initial main recognition goals are:
 - [x] Blood Group
 - [x] CIDR
 - [x] YouTube video URL
+- [x] Musical Chords
 - [ ] Image URL
 - [ ] US States
 - [ ] City
@@ -49,6 +50,7 @@ The initial main recognition goals are:
 - [ ] Currency
 - [ ] BG phone number
 - [ ] BG Address
+- [ ] GUID - http://www.regexlib.com/REDetails.aspx?regexp_id=3851, http://www.regexlib.com/REDetails.aspx?regexp_id=4918
 - [ ] TCP Port - http://www.regexlib.com/REDetails.aspx?regexp_id=1236
 - [ ] UK Postal codes - http://www.regexlib.com/REDetails.aspx?regexp_id=1047
 - [ ] Apache common log format - http://www.regexlib.com/REDetails.aspx?regexp_id=1085
