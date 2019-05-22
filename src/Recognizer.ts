@@ -47,17 +47,30 @@ export default class Recognizer {
     new ProgrammingCommentRecognizer(),
     new VatRecognizer()
   ];
-  recognize(text: string, recognizers: Array<string> = []): Array<IRecognizedType> {
+
+  recognize(text: string, recognizersList: Array<string> = []): Array<IRecognizedType> {
     text = text.trim();
-    const recognizedAs = [];
+    let recognizedAs: Array<IRecognizedType> = [];
     for (let recognizer of this.recognizers) {
-      if (recognizers.length === 0 || (recognizers.length > 0 && recognizers.indexOf(recognizer.name) !== -1)) {
-        const output = recognizer.recognize(text);
-        if (output) {
-          recognizedAs.push(output);
-        }
+      if (this.shouldRecognize(recognizersList, recognizer)) {
+        recognizedAs = this.recognizeOne(text, recognizer, recognizedAs);
       }
     }
+    return recognizedAs;
+  }
+
+  shouldRecognize(recognizersList: Array<String>, recognizer: IRecognizer) {
+    return (
+      recognizersList.length === 0 || (recognizersList.length > 0 && recognizersList.indexOf(recognizer.name) !== -1)
+    );
+  }
+
+  recognizeOne(text: string, recognizer: IRecognizer, recognizedAs: Array<IRecognizedType>) {
+    const output = recognizer.recognize(text);
+    if (output) {
+      recognizedAs.push(output);
+    }
+
     return recognizedAs;
   }
 }
