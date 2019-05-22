@@ -34,6 +34,7 @@ The initial main recognition goals are:
 - [x] ISBN
 - [x] Credit Card
 - [x] HTML Colors
+- [x] Programming comment
 - [ ] Image URL
 - [ ] US States
 - [ ] City

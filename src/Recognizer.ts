@@ -20,6 +20,7 @@ import ISBNRecognizer from "./recognizers/ISBN";
 import CreditCardRecognizer from "./recognizers/CreditCard";
 import TimeRecognizer from "./recognizers/Time";
 import HTMLColorRecognizer from "./recognizers/HTMLColor";
+import ProgrammingCommentRecognizer from "./recognizers/ProgrammingComment";
 
 export default class Recognizer {
   recognizers: Array<IRecognizer> = [
@@ -41,7 +42,8 @@ export default class Recognizer {
     new ISBNRecognizer(),
     new CreditCardRecognizer(),
     new TimeRecognizer(),
-    new HTMLColorRecognizer()
+    new HTMLColorRecognizer(),
+    new ProgrammingCommentRecognizer()
   ];
   recognize(text: string, recognizers: Array<string> = []): Array<IRecognizedType> {
     text = text.trim();

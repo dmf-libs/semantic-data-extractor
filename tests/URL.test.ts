@@ -1,7 +1,7 @@
 import Recognizer from "./../src/Recognizer";
 const recognizer = new Recognizer();
 
-test("Correctly recognizes the `  false ` with spaces arount - test trig", () => {
+test("Correctly recognizes example URL", () => {
   expect(recognizer.recognize("http://google.com")).toStrictEqual([
     {
       type: "url",
