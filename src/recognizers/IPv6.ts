@@ -5,6 +5,8 @@ import IRecognizedType from "../interfaces/IRecognizedType";
  * @author Jeff Johnston
  * @see http://www.regexlib.com/REDetails.aspx?regexp_id=1000
  */
+
+//TODO: http://www.regexlib.com/REDetails.aspx?regexp_id=3065
 export default class IPv6 implements IRecognizer {
   name: string = "IPv6";
   recognize(text: string): IRecognizedType | null {

@@ -40,6 +40,7 @@ The initial main recognition goals are:
 - [x] MD5
 - [x] Blood Group
 - [x] CIDR
+- [x] YouTube video URL
 - [ ] Image URL
 - [ ] US States
 - [ ] City
@@ -51,6 +52,8 @@ The initial main recognition goals are:
 - [ ] TCP Port - http://www.regexlib.com/REDetails.aspx?regexp_id=1236
 - [ ] UK Postal codes - http://www.regexlib.com/REDetails.aspx?regexp_id=1047
 - [ ] Apache common log format - http://www.regexlib.com/REDetails.aspx?regexp_id=1085
+- [ ] Social Security Number - All Rules Enforced - http://www.regexlib.com/REDetails.aspx?regexp_id=2850
+- [ ] DMS Coordinate - http://www.regexlib.com/REDetails.aspx?regexp_id=3219
 
 ## Notes
 
