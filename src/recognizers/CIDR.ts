@@ -16,7 +16,7 @@ export default class CIDR implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: {
+        data: {
           string: text
         }
       };

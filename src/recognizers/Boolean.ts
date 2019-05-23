@@ -3,24 +3,19 @@ import IRecognizedType from "../interfaces/IRecognizedType";
 
 export default class Boolean implements IRecognizer {
   name: string = "boolean";
-  recognizeBoolean(
-    text: string,
-    boolValues: Array<string>
-  ): IRecognizedType | null {
+  recognizeBoolean(text: string, boolValues: Array<string>): IRecognizedType | null {
     if (boolValues.indexOf(text.toLowerCase()) !== -1) {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: text.toLowerCase() === boolValues[0]
+        data: {
+          bool: text.toLowerCase() === boolValues[0]
+        }
       };
     }
     return null;
   }
-  boolValuesArray: Array<Array<string>> = [
-    ["yes", "no"],
-    ["true", "false"],
-    ["1", "0"]
-  ];
+  boolValuesArray: Array<Array<string>> = [["yes", "no"], ["true", "false"], ["1", "0"]];
   recognize(text: string): IRecognizedType | null {
     for (let boolValues of this.boolValuesArray) {
       const result = this.recognizeBoolean(text, boolValues);

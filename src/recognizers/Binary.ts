@@ -14,7 +14,7 @@ export default class Binary implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: {
+        data: {
           string: text
         }
       };

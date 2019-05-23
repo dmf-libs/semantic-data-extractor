@@ -4,14 +4,14 @@ const recognizer = new Recognizer();
 test("Recognize correct binary string", () => {
   expect(recognizer.recognize("A")).toStrictEqual([
     {
-      sanatizedValue: { string: "A" },
+      data: { string: "A" },
       type: "musical-chord",
       value: "A"
     }
   ]);
   expect(recognizer.recognize("Ab7#9b5")).toStrictEqual([
     {
-      sanatizedValue: { string: "Ab7#9b5" },
+      data: { string: "Ab7#9b5" },
       type: "musical-chord",
       value: "Ab7#9b5"
     }
@@ -19,14 +19,14 @@ test("Recognize correct binary string", () => {
   //TODO: Fix for G#6/9
   //   expect(recognizer.recognize("G#6/9", ["blood-group"])).toStrictEqual([
   //     {
-  //       sanatizedValue: { string: "G#6/9" },
+  //       data: { string: "G#6/9" },
   //       type: "musical-chord",
   //       value: "G#6/9"
   //     }
   //   ]);
   expect(recognizer.recognize("C#sus2sus4")).toStrictEqual([
     {
-      sanatizedValue: { string: "C#sus2sus4" },
+      data: { string: "C#sus2sus4" },
       type: "musical-chord",
       value: "C#sus2sus4"
     }
@@ -34,14 +34,14 @@ test("Recognize correct binary string", () => {
   //TODO: Fix for C6+G
   //   expect(recognizer.recognize("C6+G")).toStrictEqual([
   //     {
-  //       sanatizedValue: { string: "C6+G" },
+  //       data: { string: "C6+G" },
   //       type: "musical-chord",
   //       value: "C6+G"
   //     }
   //   ]);
   expect(recognizer.recognize("Cm/G")).toStrictEqual([
     {
-      sanatizedValue: { string: "Cm/G" },
+      data: { string: "Cm/G" },
       type: "musical-chord",
       value: "Cm/G"
     }

@@ -4,7 +4,9 @@ const recognizer = new Recognizer();
 test("Recognize date", () => {
   expect(recognizer.recognize("2019-10-04")).toStrictEqual([
     {
-      sanatizedValue: 1570147200,
+      data: {
+        unixTimestamp: 1570147200
+      },
       type: "datetime",
       value: "2019-10-04"
     }

@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct binary string", () => {
   expect(recognizer.recognize("12:15")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "12:15"
       },
       type: "time",
@@ -13,7 +13,7 @@ test("Recognize correct binary string", () => {
   ]);
   expect(recognizer.recognize("10:26:59")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "10:26:59"
       },
       type: "time",
@@ -22,7 +22,7 @@ test("Recognize correct binary string", () => {
   ]);
   expect(recognizer.recognize("22:01:15")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "22:01:15"
       },
       type: "time",

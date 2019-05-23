@@ -14,7 +14,7 @@ export default class Country implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: isMatch
+        data: isMatch
       };
     }
     return null;

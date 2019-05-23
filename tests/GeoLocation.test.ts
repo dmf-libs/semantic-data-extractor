@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct geo location string", () => {
   expect(recognizer.recognize("+90.0, -127.554334")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         lat: 90,
         lon: -127.554334,
         string: "+90.0, -127.554334"
@@ -15,7 +15,7 @@ test("Recognize correct geo location string", () => {
   ]);
   expect(recognizer.recognize("45, 180")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         lat: 45,
         lon: 180,
         string: "45, 180"
@@ -26,7 +26,7 @@ test("Recognize correct geo location string", () => {
   ]);
   expect(recognizer.recognize("-90, -180")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         lat: -90,
         lon: -180,
         string: "-90, -180"
@@ -37,7 +37,7 @@ test("Recognize correct geo location string", () => {
   ]);
   expect(recognizer.recognize("+90, +180")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         lat: 90,
         lon: 180,
         string: "+90, +180"
@@ -48,7 +48,7 @@ test("Recognize correct geo location string", () => {
   ]);
   expect(recognizer.recognize("-90.000, -180.0000")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         lat: -90,
         lon: -180,
         string: "-90.000, -180.0000"
@@ -59,7 +59,7 @@ test("Recognize correct geo location string", () => {
   ]);
   expect(recognizer.recognize("47.1231231, 179.99999999")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         lat: 47.1231231,
         lon: 179.99999999,
         string: "47.1231231, 179.99999999"

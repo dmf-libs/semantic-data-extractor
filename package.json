@@ -1,8 +1,8 @@
 {
-  "name": "semanticDataExtractor",
-  "version": "0.0.1",
+  "name": "semantic-data-extractor",
+  "version": "1.0.0",
   "description": "A tool that can recognize and infer data types and semantic meaning from strings",
-  "main": "app.js",
+  "main": "dist/Recognizer.js",
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watch",

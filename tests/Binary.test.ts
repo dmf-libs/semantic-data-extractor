@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct binary string", () => {
   expect(recognizer.recognize("10101000", ["binary"])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "10101000"
       },
       type: "binary",
@@ -13,7 +13,7 @@ test("Recognize correct binary string", () => {
   ]);
   expect(recognizer.recognize("01010000", ["binary"])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "01010000"
       },
       type: "binary",
@@ -22,7 +22,7 @@ test("Recognize correct binary string", () => {
   ]);
   expect(recognizer.recognize("100000001", ["binary"])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "100000001"
       },
       type: "binary",

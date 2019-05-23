@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct binary string", () => {
   expect(recognizer.recognize("1A79a4d60de6718e8e5b326e338ae533", ["md5" /* performance */])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "1A79a4d60de6718e8e5b326e338ae533"
       },
       type: "md5",

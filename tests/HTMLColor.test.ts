@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct html color", () => {
   expect(recognizer.recognize("#00ccff")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "#00ccff"
       },
       type: "html-color",
@@ -13,7 +13,7 @@ test("Recognize correct html color", () => {
   ]);
   expect(recognizer.recognize("#039", ["html-color" /* datetime */])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "#039"
       },
       type: "html-color",
@@ -22,7 +22,7 @@ test("Recognize correct html color", () => {
   ]);
   expect(recognizer.recognize("ffffcc")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "ffffcc"
       },
       type: "html-color",

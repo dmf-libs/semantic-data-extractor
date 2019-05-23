@@ -8,7 +8,7 @@ export default class Integer implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: parseInt(text, 10)
+        data: { int: parseInt(text, 10) }
       };
     }
     return null;

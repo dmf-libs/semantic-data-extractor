@@ -16,7 +16,7 @@ export default class IPv4Socket implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: text
+        data: { string: text }
       };
     }
     return null;

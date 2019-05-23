@@ -8,7 +8,7 @@ test("Recognize correct binary string", () => {
     ])
   ).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "http://www.youtube.com/watch?v=lK-zaWCp-co&feature=g-all-u&context=G27a8a4aFAAAAAAAAAAA"
       },
       type: "youtube-url",
@@ -17,7 +17,7 @@ test("Recognize correct binary string", () => {
   ]);
   expect(recognizer.recognize("http://youtu.be/AXaoi6dz59A", ["youtube-url"])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "http://youtu.be/AXaoi6dz59A"
       },
       type: "youtube-url",
@@ -30,7 +30,7 @@ test("Recognize correct binary string", () => {
     ])
   ).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "youtube.com/watch?gl=NL&hl=nl&feature=g-vrec&context=G2584313RVAAAAAAAABA&v=35LqQPKylEA"
       },
       type: "youtube-url",
@@ -44,7 +44,7 @@ test("Recognize correct binary string", () => {
     )
   ).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "https://youtube.com/watch?gl=NL&hl=nl&feature=g-vrec&context=G2584313RVAAAAAAAABA&v=35LqQPKylEA"
       },
       type: "youtube-url",

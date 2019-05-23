@@ -14,7 +14,7 @@ export default class MacAddress implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: text
+        data: { string: text }
       };
     }
     return null;

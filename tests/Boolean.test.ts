@@ -5,7 +5,7 @@ test("Correctly recognizes the string true", () => {
     {
       type: "boolean",
       value: "true",
-      sanatizedValue: true
+      data: { bool: true }
     }
   ]);
 });
@@ -15,7 +15,7 @@ test("Correctly recognizes the string false", () => {
     {
       type: "boolean",
       value: "false",
-      sanatizedValue: false
+      data: { bool: false }
     }
   ]);
 });
@@ -25,7 +25,7 @@ test("Correctly recognizes the case insensitive string - false", () => {
     {
       type: "boolean",
       value: "fAlSe",
-      sanatizedValue: false
+      data: { bool: false }
     }
   ]);
 });
@@ -35,7 +35,7 @@ test("Correctly recognizes the case insensitive string - true", () => {
     {
       type: "boolean",
       value: "tRuE",
-      sanatizedValue: true
+      data: { bool: true }
     }
   ]);
 });
@@ -45,7 +45,7 @@ test("Correctly recognizes the Yes as true", () => {
     {
       type: "boolean",
       value: "Yes",
-      sanatizedValue: true
+      data: { bool: true }
     }
   ]);
 });
@@ -55,7 +55,7 @@ test("Correctly recognizes the No as false", () => {
     {
       type: "boolean",
       value: "No",
-      sanatizedValue: false
+      data: { bool: false }
     }
   ]);
 });
@@ -65,7 +65,7 @@ test("Correctly recognizes the 1 as true and integer", () => {
     {
       type: "boolean",
       value: "1",
-      sanatizedValue: true
+      data: { bool: true }
     }
   ]);
 });
@@ -75,7 +75,7 @@ test("Correctly recognizes the 0 as false and integer", () => {
     {
       type: "boolean",
       value: "0",
-      sanatizedValue: false
+      data: { bool: false }
     }
   ]);
 });
@@ -85,7 +85,7 @@ test("Correctly recognizes the `  false ` with spaces arount - test trig", () =>
     {
       type: "boolean",
       value: "false",
-      sanatizedValue: false
+      data: { bool: false }
     }
   ]);
 });

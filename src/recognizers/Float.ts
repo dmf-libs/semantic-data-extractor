@@ -8,7 +8,9 @@ export default class Float implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: parseFloat(text.replace(",", "."))
+        data: {
+          float: parseFloat(text.replace(",", "."))
+        }
       };
     }
     return null;

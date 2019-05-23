@@ -12,7 +12,9 @@ export default class DateTime implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: moment(new Date(text)).unix()
+        data: {
+          unixTimestamp: moment(new Date(text)).unix()
+        }
       };
     }
     return null;

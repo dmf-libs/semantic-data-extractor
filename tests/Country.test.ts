@@ -4,21 +4,21 @@ const recognizer = new Recognizer();
 test("Recognize correct Country", () => {
   expect(recognizer.recognize("bUlgarIa")).toStrictEqual([
     {
-      sanatizedValue: { name: "Bulgaria", code: "BG" },
+      data: { name: "Bulgaria", code: "BG" },
       type: "country",
       value: "bUlgarIa"
     }
   ]);
   expect(recognizer.recognize("USA")).toStrictEqual([
     {
-      sanatizedValue: { name: "USA", code: "US" },
+      data: { name: "USA", code: "US" },
       type: "country",
       value: "USA"
     }
   ]);
   expect(recognizer.recognize("Greece")).toStrictEqual([
     {
-      sanatizedValue: { name: "Greece", code: "GR" },
+      data: { name: "Greece", code: "GR" },
       type: "country",
       value: "Greece"
     }

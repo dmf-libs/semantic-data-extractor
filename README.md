@@ -30,7 +30,8 @@ Install it with npm:
 npm install semantic-data-extractor --save
 ```
 
-or yarn: 
+or yarn:
+
 ```
 yarn add semantic-data-extractor
 ```
@@ -40,14 +41,14 @@ Then import it and use it:
 ```js
 import Recognizer from "semantic-data-extractor";
 const recognizer = new Recognizer();
-recognizer.recognize("+90.0, -127.554334")
+recognizer.recognize("+90.0, -127.554334");
 
 /*
 [
   {
     type: "geo-location",
     value: "+90.0, -127.554334",
-    sanatizedValue: {
+    data: {
        lat: 90,
        lon: -127.554334,
        string: "+90.0, -127.554334"
@@ -56,6 +57,7 @@ recognizer.recognize("+90.0, -127.554334")
 ]
 */
 ```
+
 🎉 Congrats, enjoy using Semantic Data Extractor!
 
 ## Documentation
@@ -105,7 +107,6 @@ This is the initial set of Recognizers:
 - [ ] Apache common log format - http://www.regexlib.com/REDetails.aspx?regexp_id=1085
 - [ ] Social Security Number - All Rules Enforced - http://www.regexlib.com/REDetails.aspx?regexp_id=2850
 - [ ] DMS Coordinate - http://www.regexlib.com/REDetails.aspx?regexp_id=3219
-
 
 ## Contribution
 

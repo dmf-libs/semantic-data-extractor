@@ -4,21 +4,21 @@ const recognizer = new Recognizer();
 test("Recognize correct TLD", () => {
   expect(recognizer.recognize("bg", ["tld"])).toStrictEqual([
     {
-      sanatizedValue: "bg",
+      data: { string: "bg" },
       type: "tld",
       value: "bg"
     }
   ]);
-  expect(recognizer.recognize("com", ["tld"])).toStrictEqual([
+  expect(recognizer.recognize("coM", ["tld"])).toStrictEqual([
     {
-      sanatizedValue: "com",
+      data: { string: "com" },
       type: "tld",
-      value: "com"
+      value: "coM"
     }
   ]);
   expect(recognizer.recognize("website", ["tld"])).toStrictEqual([
     {
-      sanatizedValue: "website",
+      data: { string: "website" },
       type: "tld",
       value: "website"
     }

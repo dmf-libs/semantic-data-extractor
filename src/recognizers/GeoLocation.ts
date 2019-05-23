@@ -17,7 +17,7 @@ export default class GeoLocation implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: {
+        data: {
           string: text,
           lat: parseFloat(match.groups.lat),
           lon: parseFloat(match.groups.lon)

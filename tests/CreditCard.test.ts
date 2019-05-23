@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct binary string", () => {
   expect(recognizer.recognize("6011-1111-1111-1111")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "6011-1111-1111-1111"
       },
       type: "credit-card",
@@ -13,7 +13,7 @@ test("Recognize correct binary string", () => {
   ]);
   expect(recognizer.recognize("5423-1111-1111-1111")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "5423-1111-1111-1111"
       },
       type: "credit-card",
@@ -22,7 +22,7 @@ test("Recognize correct binary string", () => {
   ]);
   expect(recognizer.recognize("341111111111111", ["credit-card"])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "341111111111111"
       },
       type: "credit-card",
@@ -34,5 +34,5 @@ test("Recognize correct binary string", () => {
 test("Do not recognize wrong binary string", () => {
   expect(recognizer.recognize("4111-111-111-111")).toStrictEqual([]);
   expect(recognizer.recognize("3411-1111-1111-111")).toStrictEqual([]);
-  expect(recognizer.recognize("Visa")).toStrictEqual([]);
+  expect(recognizer.recognize("Visa", ["credit-card" /* it is TLD*/])).toStrictEqual([]);
 });

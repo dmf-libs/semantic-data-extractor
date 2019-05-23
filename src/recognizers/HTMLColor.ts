@@ -14,7 +14,7 @@ export default class HTMLColor implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: {
+        data: {
           string: text
         }
       };

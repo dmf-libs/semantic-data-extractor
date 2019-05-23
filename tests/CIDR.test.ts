@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct cidr string", () => {
   expect(recognizer.recognize("192.168.100.1/24")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "192.168.100.1/24"
       },
       type: "cidr",
@@ -13,7 +13,7 @@ test("Recognize correct cidr string", () => {
   ]);
   expect(recognizer.recognize("0.0.0.0/0")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "0.0.0.0/0"
       },
       type: "cidr",

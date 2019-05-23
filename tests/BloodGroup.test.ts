@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct blood group string", () => {
   expect(recognizer.recognize("A+", ["blood-group"])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "A+"
       },
       type: "blood-group",
@@ -13,7 +13,7 @@ test("Recognize correct blood group string", () => {
   ]);
   expect(recognizer.recognize("B-", ["blood-group"])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "B-"
       },
       type: "blood-group",
@@ -22,7 +22,7 @@ test("Recognize correct blood group string", () => {
   ]);
   expect(recognizer.recognize("AB+")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "AB+"
       },
       type: "blood-group",

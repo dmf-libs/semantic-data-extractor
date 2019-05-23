@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct VAT", () => {
   expect(recognizer.recognize("RO4594917")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "RO4594917"
       },
       type: "vat",

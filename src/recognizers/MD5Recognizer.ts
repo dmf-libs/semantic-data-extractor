@@ -10,7 +10,7 @@ export default class MD5Recognizer implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: {
+        data: {
           string: text
         }
       };

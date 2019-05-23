@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct ISBN number", () => {
   expect(recognizer.recognize("ISBN 0 93028 923 4")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "ISBN 0 93028 923 4"
       },
       type: "isbn",
@@ -13,7 +13,7 @@ test("Recognize correct ISBN number", () => {
   ]);
   expect(recognizer.recognize("ISBN 1-56389-668-0")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "ISBN 1-56389-668-0"
       },
       type: "isbn",
@@ -22,7 +22,7 @@ test("Recognize correct ISBN number", () => {
   ]);
   expect(recognizer.recognize("ISBN 1-56389-016-X")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         string: "ISBN 1-56389-016-X"
       },
       type: "isbn",

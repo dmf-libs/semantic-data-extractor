@@ -4,21 +4,21 @@ const recognizer = new Recognizer();
 test("Recognize correct IPv4", () => {
   expect(recognizer.recognize("217.6.9.89")).toStrictEqual([
     {
-      sanatizedValue: "217.6.9.89",
+      data: { string: "217.6.9.89" },
       type: "IPv4",
       value: "217.6.9.89"
     }
   ]);
   expect(recognizer.recognize("0.0.0.0")).toStrictEqual([
     {
-      sanatizedValue: "0.0.0.0",
+      data: { string: "0.0.0.0" },
       type: "IPv4",
       value: "0.0.0.0"
     }
   ]);
   expect(recognizer.recognize("255.255.255.255")).toStrictEqual([
     {
-      sanatizedValue: "255.255.255.255",
+      data: { string: "255.255.255.255" },
       type: "IPv4",
       value: "255.255.255.255"
     }

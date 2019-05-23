@@ -4,21 +4,21 @@ const recognizer = new Recognizer();
 test("Recognize currect Mac Addresses", () => {
   expect(recognizer.recognize("01:23:45:67:89:ab")).toStrictEqual([
     {
-      sanatizedValue: "01:23:45:67:89:ab",
+      data: { string: "01:23:45:67:89:ab" },
       type: "mac-address",
       value: "01:23:45:67:89:ab"
     }
   ]);
   expect(recognizer.recognize("01:23:45:67:89:AB")).toStrictEqual([
     {
-      sanatizedValue: "01:23:45:67:89:AB",
+      data: { string: "01:23:45:67:89:AB" },
       type: "mac-address",
       value: "01:23:45:67:89:AB"
     }
   ]);
   expect(recognizer.recognize("fE:dC:bA:98:76:54")).toStrictEqual([
     {
-      sanatizedValue: "fE:dC:bA:98:76:54",
+      data: { string: "fE:dC:bA:98:76:54" },
       type: "mac-address",
       value: "fE:dC:bA:98:76:54"
     }

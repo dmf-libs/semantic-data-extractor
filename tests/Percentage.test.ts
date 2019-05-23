@@ -4,7 +4,7 @@ const recognizer = new Recognizer();
 test("Recognize correct percentage string", () => {
   expect(recognizer.recognize("100%", ["percentage"])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         percentage: 100,
         string: "100%"
       },
@@ -14,7 +14,7 @@ test("Recognize correct percentage string", () => {
   ]);
   expect(recognizer.recognize("100", ["percentage"])).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         percentage: 100,
         string: "100"
       },
@@ -24,7 +24,7 @@ test("Recognize correct percentage string", () => {
   ]);
   expect(recognizer.recognize("52.65%")).toStrictEqual([
     {
-      sanatizedValue: {
+      data: {
         percentage: 52.65,
         string: "52.65%"
       },

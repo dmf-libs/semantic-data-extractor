@@ -6,7 +6,7 @@ test("Correctly recognizes example URL", () => {
     {
       type: "url",
       value: "http://google.com",
-      sanatizedValue: new URL("http://google.com")
+      data: new URL("http://google.com")
     }
   ]);
 });

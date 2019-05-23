@@ -10,7 +10,7 @@ export default class URLRecognizer implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: new URL(text)
+        data: new URL(text)
       };
     }
     return null;

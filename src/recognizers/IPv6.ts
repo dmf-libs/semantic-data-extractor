@@ -18,7 +18,7 @@ export default class IPv6 implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: text
+        data: { string: text }
       };
     }
     return null;

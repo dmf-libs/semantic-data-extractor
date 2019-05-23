@@ -14,7 +14,7 @@ export default class Percentage implements IRecognizer {
       return {
         type: this.name,
         value: text,
-        sanatizedValue: {
+        data: {
           percentage: parseFloat(text.replace("%", "")),
           string: text
         }
