@@ -22,13 +22,42 @@
   <img src="https://img.shields.io/david/kolarski/semanticDataExtractor.svg" />
 </p>
 
-## Contribution
+## Getting started
 
-Feel free to add suggestions, PRs, comments and bug reports.
+Install it with npm:
 
-## Goals
+```
+npm install semantic-data-extractor --save
+```
 
-The initial main recognition goals are:
+or yarn: 
+```
+yarn add semantic-data-extractor
+```
+
+Then import it and use it:
+
+```js
+import Recognizer from "semantic-data-extractor";
+const recognizer = new Recognizer();
+recognizer.recognize("2019-10-04")
+/*
+[
+    {
+      sanatizedValue: {
+        unixTimestamp: 1570147200
+      },
+      type: "datetime",
+      value: "2019-10-04"
+    }
+  ]
+  */
+```
+🎉 Congrats, enjoy using Semantic Data Extractor!
+
+## Documentation
+
+This is the initial set of Recognizers:
 
 - [x] Boolean
 - [x] URL
@@ -73,6 +102,11 @@ The initial main recognition goals are:
 - [ ] Apache common log format - http://www.regexlib.com/REDetails.aspx?regexp_id=1085
 - [ ] Social Security Number - All Rules Enforced - http://www.regexlib.com/REDetails.aspx?regexp_id=2850
 - [ ] DMS Coordinate - http://www.regexlib.com/REDetails.aspx?regexp_id=3219
+
+
+## Contribution
+
+Feel free to add suggestions, PRs, comments and bug reports.
 
 ## Notes
 
