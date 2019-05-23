@@ -42,23 +42,66 @@ Then import it and use it:
 import Recognizer from "semantic-data-extractor";
 const recognizer = new Recognizer();
 recognizer.recognize("+90.0, -127.554334");
+```
 
-/*
+You get either <strong>null</strong> or a <strong>list</strong> of <a href="https://github.com/kolarski/semantic-data-extractor/blob/master/src/interfaces/IRecognizedType.ts">IRecognizedType</a> response:
+
+```js
 [
   {
     type: "geo-location",
-    value: "+90.0, -127.554334",
     data: {
-       lat: 90,
-       lon: -127.554334,
-       string: "+90.0, -127.554334"
+      lat: 90,
+      lon: -127.554334,
+      string: "+90.0, -127.554334"
     }
+  }
+];
+```
+
+🎉 Congrats, enjoy using Semantic Data Extractor!
+
+## Usage
+
+You can use the recognizer to recognize and extract various forms of data from strings:
+
+```js
+const recognizer = new Recognizer();
+
+recognizer.recognize("+90.0, -127.554334"); // type: "geo-location"
+recognizer.recognize("ISBN 0 93028 923 4"); // type: "isbn"
+recognizer.recognize("::FFFF:129.144.52.38"); // type: "IPv6"
+recognizer.recognize("example@gmail.com"); // type: "email"
+recognizer.recognize("#ffc500"); // type: "html-color"
+recognizer.recognize('{"a":42}'); // type: "json"
+recognizer.recognize("30%"); // type: "percentage"
+recognizer.recognize("Denmark"); // type: "country"
+recognizer.recognize("A+"); // type: "blood-group"
+```
+
+and many more... (see documentation below)
+
+---
+
+### Specify list of recognizers
+
+You can specifiy list of recognizers to use and ignore all others.
+
+For example we might want to recognize only <strong>boolean</strong> values and ignore the <strong>integer</strong> recognizer.
+
+```js
+const recognizer = new Recognizer();
+
+recognizer.recognize("1", ["boolean"]);
+/*
+[
+  {
+    type: "boolean",
+    data: { bool: true }
   }
 ]
 */
 ```
-
-🎉 Congrats, enjoy using Semantic Data Extractor!
 
 ## Documentation
 
