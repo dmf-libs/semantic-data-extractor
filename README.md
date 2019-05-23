@@ -40,15 +40,17 @@ Then import it and use it:
 ```js
 import Recognizer from "semantic-data-extractor";
 const recognizer = new Recognizer();
-recognizer.recognize("2019-10-04")
+recognizer.recognize("+90.0, -127.554334")
 /*
 [
   {
     sanatizedValue: {
-      unixTimestamp: 1570147200
+       lat: 90,
+       lon: -127.554334,
+       string: "+90.0, -127.554334"
     },
-    type: "datetime",
-    value: "2019-10-04"
+    type: "geo-location",
+    value: "+90.0, -127.554334"
   }
 ]
 */
