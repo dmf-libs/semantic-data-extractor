@@ -44,13 +44,13 @@ recognizer.recognize("+90.0, -127.554334")
 /*
 [
   {
+    type: "geo-location",
+    value: "+90.0, -127.554334",
     sanatizedValue: {
        lat: 90,
        lon: -127.554334,
        string: "+90.0, -127.554334"
-    },
-    type: "geo-location",
-    value: "+90.0, -127.554334"
+    }
   }
 ]
 */
