@@ -43,15 +43,15 @@ const recognizer = new Recognizer();
 recognizer.recognize("2019-10-04")
 /*
 [
-    {
-      sanatizedValue: {
-        unixTimestamp: 1570147200
-      },
-      type: "datetime",
-      value: "2019-10-04"
-    }
-  ]
-  */
+  {
+    sanatizedValue: {
+      unixTimestamp: 1570147200
+    },
+    type: "datetime",
+    value: "2019-10-04"
+  }
+]
+*/
 ```
 🎉 Congrats, enjoy using Semantic Data Extractor!
 
