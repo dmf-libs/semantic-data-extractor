@@ -24,13 +24,13 @@
 
 ## Getting started
 
-Install it with npm:
+Install it with <strong>npm</strong>:
 
 ```
 npm install semantic-data-extractor --save
 ```
 
-or yarn:
+or <strong>yarn</strong>:
 
 ```
 yarn add semantic-data-extractor
@@ -40,11 +40,14 @@ Then import it and use it:
 
 ```js
 import Recognizer from "semantic-data-extractor";
+
 const recognizer = new Recognizer();
 recognizer.recognize("+90.0, -127.554334");
 ```
 
-You get either <strong>null</strong> or a <strong>list</strong> of <a href="https://github.com/kolarski/semantic-data-extractor/blob/master/src/interfaces/IRecognizedType.ts">IRecognizedType</a> response:
+You get as response a <strong>list</strong> of <a href="https://github.com/kolarski/semantic-data-extractor/blob/master/src/interfaces/IRecognizedType.ts">IRecognizedType</a> with all matching types that fit the data.
+
+For the example above this is the response:
 
 ```js
 [
@@ -70,7 +73,7 @@ const recognizer = new Recognizer();
 
 recognizer.recognize("+90.0, -127.554334"); // type: "geo-location"
 recognizer.recognize("ISBN 0 93028 923 4"); // type: "isbn"
-recognizer.recognize("::FFFF:129.144.52.38"); // type: "IPv6"
+recognizer.recognize("1080::8:800:200C:417A"); // type: "IPv6"
 recognizer.recognize("example@gmail.com"); // type: "email"
 recognizer.recognize("#ffc500"); // type: "html-color"
 recognizer.recognize('{"a":42}'); // type: "json"
