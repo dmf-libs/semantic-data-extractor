@@ -41,6 +41,7 @@ Then import it and use it:
 import Recognizer from "semantic-data-extractor";
 const recognizer = new Recognizer();
 recognizer.recognize("+90.0, -127.554334")
+
 /*
 [
   {
