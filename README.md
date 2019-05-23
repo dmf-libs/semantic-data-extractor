@@ -108,6 +108,10 @@ recognizer.recognize("1", ["boolean"]);
 
 ## Documentation
 
+<a target="_blank" href="https://github.com/kolarski/semantic-data-extractor/tree/master/src/recognizers">View Recognizers Source</a>
+
+<a target="_blank" href="https://github.com/kolarski/semantic-data-extractor/tree/master/tests">View Recognizers tests / usage</a>
+
 This is the initial set of Recognizers:
 
 - [x] Boolean
