@@ -1,5 +1,5 @@
 {
-  "name": "semantic-data-extractor",
+  "name": "@dmf/semantic-data-extractor",
   "version": "1.0.0",
   "description": "A tool that can recognize and infer data types and semantic meaning from strings",
   "main": "dist/Recognizer.js",
